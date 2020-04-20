@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel='icon' href='imgs/audium.ico' type='image/x-icon' >
+    <script src="link.jsp"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="head">
+
+            <h1>Welcome to ABC Bank</h1>
+            <p>Available Balance in Rupees</p>
+            <p id="balance">+0000.00</p>
+            <br>
+
+            <table>
+                <tr id="row1">
+                    <td><b> DEPOSIT</b></td>
+                    <td id="cash">+0000.00</td>
+                </tr>
+            </table>
+
+            <br>
+            <table>
+                <tr id="row2">
+                    <td><b> WITHDRAWAL</b></td>
+                    <td id="cashw">-0000.00</td>
+                </tr>
+            </table>
+        </div>
+        <center>
+            <table>
+                <form>
+                    <tr>
+                        <th id="ab">CRN</th>
+                        <th>:<input type="text" placeholder="Enter CRN"></th>
+
+
+                    </tr>
+                    <tr>
+                        <th id="ab">Account Holder Name
+                        <th>:<input type="text" placeholder="Enter name"></th>
+
+                    </tr>
+                    <tr>
+                        <th id="ab">Account Number</th>
+                        <th>:<input type="text" placeholder="Enter number"></th>
+                    </tr>
+                </form>
+
+            </table>
+        </center>
+        <br>
+        <div class="frm">
+
+            <select name="action" id="dropbox">
+                <option value="deposite">Deposite</option>
+                <option value="withrawal">Withdrawal</option>
+            </select>
+            <input type="text" placeholder=" Add Description" style="width: 450px;" id="des">
+            <input type="text" placeholder=" Value" name="num2" id="inpt">
+            <input type="button" value="Submit" id="subm" onclick="banking()">
+        </div>
+        
+        <div>
+            <table id="btntable">
+                <tr>
+                    <td id="depbtn"><input type="button" value="Deposite" onclick="addition(num2.value)" > </td>
+                    <td id="withbtn"><input type="button" value="Withdrawal" onclick="substraction(num2.value)" > </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+    </form>
+    <div class="res">
+    <div class="withlog" id="div1" >
+    </div>
+    <div class="deplog" id="div2" >
+    </div>
+</div>
+</body>
+
+</html>

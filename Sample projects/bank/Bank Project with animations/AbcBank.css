@@ -1,0 +1,80 @@
+#bankimg
+{
+    height: 250px;
+    width: 100%;
+    animation: bankimg 7s linear infinite
+}
+@keyframes bankimg
+{
+    50%
+    {
+        filter: grayscale(100%);
+    }
+}
+
+
+#welcome
+{
+    height: 30px;
+    
+    font-weight: bolder;
+    color:red;
+    font-size: 2em;
+    
+    animation: wel 5s infinite linear alternate;
+}
+@keyframes wel{
+    
+    50%{box-shadow: 50px 80px 0px aqua}
+    50%{text-shadow: 50px 80px 0px black}
+}
+.welcome{
+    margin-left: 900px;
+    transform: translate(0px,-250px)
+}
+#intro{margin-left: 500px;
+    transform: translateY(-230px)
+}
+
+
+
+input{border: 0px solid;font-weight: bold }
+
+
+.table1
+{
+    transform: translate(500px,-210px);
+    font-weight: bolder;
+    vertical-align: top
+}
+#div1
+{
+    background-color: ghostwhite;
+    height: 60px;
+    margin-top: -300px
+}
+
+#table2
+{
+    transform: translate(300px,-3px);
+
+}
+#table3
+{    width=100%;
+
+}
+#abcbank:hover{animation-play-state:paused}
+#abcbank{
+    height: 100px;
+    animation: log 2s infinite linear alternate 
+}
+@keyframes log{
+    to{
+        transform: rotateY(180deg)
+    }
+    50%{box-shadow:20px 30px 0px grey  }
+}
+.logo{
+    transform: translateY(-540px)
+}
+    

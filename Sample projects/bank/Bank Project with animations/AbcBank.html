@@ -1,0 +1,92 @@
+<html >
+    <head>
+        <title>Abc Bank</title>
+        <link rel="icon" href="E:\prince documents\class work\Html Assignment\Bank Project\bank.jpg">
+        <link rel="stylesheet" href="AbcBank.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+        <img src="bank.jpg" alt="" id="bankimg">
+        <div class="welcome"> <div id="welcome">WELCOME TO ABC BANK</div></div>
+        <div id="intro"> 
+           <table cellspacing="10px">
+            <tr><td style="color: white">Available Balance in %Month%</td></tr>
+            <tr><td style="font-size: 42px;text-align: center;color: white">+0000.0</td></tr>
+            <tr><td><input type="text" placeholder="Deposit" style="background:skyblue;height: 30px;width: 250px"></td></tr>
+            <tr><td><input type="text" placeholder="withdrawl" style="background:red;height: 30px;width: 250px"></td></tr>
+            
+            </table>
+        </div>
+        <table class=table1>
+            <tr>
+                <td>CRN</td>
+                <td ><input type="text" placeholder=":  xxxxxxxx"></td>
+            </tr>
+
+            <tr>
+                <td>Account Holder Name</td>
+                <td><input type="text" placeholder=":  yyyyyyyy"></td>
+            </tr>
+
+            <tr>
+                <td>Account Number</td>
+                <td><input type="text" placeholder=":  xxxxxxxx" ></td>
+            </tr>
+        </table>
+        <div class="logo">  <img src="ABC%20LOGO.png" alt="" id="abcbank">
+            <input type="checkbox" onclick="backFace(this)" checked>Bank logo</div> 
+
+        <div id="div1"> 
+            <table id="table2" cellpadding="10px" cellspacing="5px">
+                <tr >
+                    <td >
+                        <select name="Deposit" style="height: 30px;width: 100px;padding-left: 10px;border:0px solid" >
+                            <option value="Deposit">Deposit</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </td>
+
+                    <td >
+                        <input type="text" placeholder="Add Description" style="height: 30px;width: 400px;padding-left: 10px;">
+                    </td>
+
+                    <td>
+                        <input type="text" placeholder="Value" style="height: 30px;width: 100px;padding-left: 10px;">
+                    </td>
+
+                    <td>
+                        <img src="checkmark.png" alt="" style="height: 20px">    
+                    </td>
+                </tr>
+            </table>
+        </div>                 
+
+        <table id="table3" cellpadding="50px">
+            <tr>
+                <td><input type="text" placeholder="Deposit"></td>
+
+                <td ><input type="text" placeholder="Deposit"></td>
+            </tr>
+        </table>
+        <script>
+            function backFace(x)
+            { if(x.checked===true)
+            {  
+                document.getElementById("abcbank").style.animationPlayState="running";
+            }
+             else
+             {
+                 document.getElementById("abcbank").style.animationPlayState="paused";   
+             }
+            }
+        </script>
+
+
+
+
+    </body>
+</html>
